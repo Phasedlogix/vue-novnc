@@ -15,6 +15,10 @@ import RFB from '@novnc/novnc/core/rfb';
 export default {
   name: 'novnc-client',
 
+  props: {
+    websockify: String
+  },
+
   data() {
     return {
       rfb: null,
@@ -34,7 +38,7 @@ export default {
 
   mounted() {
     this.$nextTick(() => {
-      this.rfb = new RFB(this.$el.lastChild, 'ws://172.16.77.117:6080/');
+      this.rfb = new RFB(this.$el.lastChild, this.websockify);
     });
   }
 };

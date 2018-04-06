@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <novnc-client />
+    <novnc-client websockify="ws://172.16.77.117:6080/" />
   </div>
 </template>
 
