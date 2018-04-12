@@ -13,7 +13,6 @@
 import RFB from '@novnc/novnc/core/rfb';
 
 export default {
-  name: 'novnc-client',
 
   props: {
     websockify: String
@@ -43,6 +42,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-</style>
