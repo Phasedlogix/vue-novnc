@@ -2,7 +2,8 @@
   "name": "vue-novnc",
   "version": "0.1.0",
   "description": "A noVNC Vue component",
-  "main": "dist/vue-novnc.js",
+  "main": "dist/vue-novnc.min.js",
+  "module": "dist/vue-novnc.js",
   "license": "BSD-3-Clause",
   "repository": "github:Phasedlogix/vue-novnc",
   "keywords": [
@@ -11,43 +12,20 @@
     "vue"
   ],
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "test": "vue-cli-service test",
-    "lint": "vue-cli-service lint"
+    "build": "rollup -c"
   },
   "dependencies": {
-    "@novnc/novnc": "^1.0.0",
-    "vue": "^2.5.13",
-    "websockify": "^0.7.1"
+    "@novnc/novnc": "^1.0.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.0.0-beta.6",
-    "@vue/cli-plugin-eslint": "^3.0.0-beta.6",
-    "@vue/cli-plugin-unit-mocha": "^3.0.0-beta.6",
-    "@vue/cli-service": "^3.0.0-beta.6",
-    "@vue/eslint-config-prettier": "^3.0.0-beta.6",
-    "@vue/test-utils": "^1.0.0-beta.10",
-    "chai": "^4.1.2",
-    "lint-staged": "^6.0.0",
-    "vue-template-compiler": "^2.5.13"
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ],
-  "gitHooks": {
-    "pre-commit": "lint-staged"
-  },
-  "lint-staged": {
-    "*.js": [
-      "vue-cli-service lint",
-      "git add"
-    ],
-    "*.vue": [
-      "vue-cli-service lint",
-      "git add"
-    ]
+    "rollup": "^0.57.1",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-uglify": "^3.0.0",
+    "rollup-plugin-vue": "^3.0.0",
+    "vue": "^2.2.1",
+    "vue-html-loader": "^1.2.3",
+    "vue-loader": "^11.1.4",
+    "vue-style-loader": "^2.0.3",
+    "vue-template-compiler": "^2.2.1"
   }
 }
