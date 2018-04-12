@@ -10,7 +10,7 @@ import VueNoVNC from '../../../dist/vue-novnc'
 export default {
   name: 'app',
   components: {
-    VueNoVNCkln
+    VueNoVNC
   }
 }
 </script>
