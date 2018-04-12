@@ -1,6 +1,6 @@
 {
   "name": "@phasedlogix/vue-novnc",
-  "version": "0.1.0",
+  "version": "1.0.0-alpha",
   "author": "Phasedlogix",
   "description": "A noVNC Vue component",
   "main": "dist/vue-novnc.min.js",
