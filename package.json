@@ -13,6 +13,9 @@
     "websockify",
     "vue"
   ],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "rollup -c"
   },
