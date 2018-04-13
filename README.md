@@ -2,6 +2,14 @@
 
 A [Vue](https://vuejs.org/) component for [noVNC](http://novnc.com/info.html)
 
+## Installation
+
+`yarn add @phasedlogix/vue-novnc`
+
+or
+
+`npm i @phasedlogix/vue-novnc --save`
+
 ## Demo
 
 ### Option 1 - UMD
