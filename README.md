@@ -14,6 +14,10 @@ or
 
 ### Option 1 - UMD
 
+Run `npm install`
+
+Run `npm run-script build` 
+
 Open `demo/umd/index.html`. This file pulls Vue from a CDN and renders the vue-novnc component in `dist/vue-novnc.min.js`.
 
 ### Option 2 - ES6
